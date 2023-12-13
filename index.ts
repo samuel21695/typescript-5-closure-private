@@ -15,3 +15,8 @@ interface MemberData {
  * @param cart- 멤버의 쇼핑 카트입니다.
  * @returns 멤버 데이터를 반환하는 함수입니다.
  */
+function memberDataWithClosure(id: string, password: string, address: string, cart: string[]): () => MemberData {
+  return function() {
+    return { id, password, address, cart };
+  };
+}
