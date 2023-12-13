@@ -36,3 +36,7 @@ let memberDataWithoutClosure: MemberData = {
  * 클로저 패턴, 위 예제에서 memberDataWithClosure 함수를 통해 은닉화를 구현합니다.
  */
 
+// 클로저를 사용하는 예제
+let member1WithClosure = memberDataWithClosure('user1', 'pass1', 'address1', ['item', 'item2']);
+console.log(member1WithClosure()); // 클로저를 통한 데이터 접근
+// 위 예제에서는 memberDataWithClosure 함수를 통해서만 데이터에 접근할 수 있습니다.
