@@ -6,3 +6,12 @@ interface MemberData {
   cart: string[];
 }
 
+// 클로저를 사용하는 함수
+/**
+ * 멤버 데이터에 접근하는 함수를 반환하는 클로저를 생성합니다.
+ * @param id - 멤버의 ID입니다.
+ * @param password - 멤버의 password입니다.
+ * @param address - 멤버의 주소입니다.
+ * @param cart- 멤버의 쇼핑 카트입니다.
+ * @returns 멤버 데이터를 반환하는 함수입니다.
+ */
